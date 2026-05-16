@@ -1,31 +1,18 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 export default function Hero() {
   return (
-    <section className="relative mt-16 h-[819px] overflow-hidden">
+    <section className="relative mt-16 h-204.75 overflow-hidden">
       {/* Background placeholder (would be replaced with an image) */}
-      <div
-        className="absolute inset-0"
-        style={{
-          background:
-            "linear-gradient(135deg, #eceef0 0%, #dae2fd 50%, #eceef0 100%)",
-          opacity: 0.2,
-        }}
-      />
+      <div className="absolute inset-0 bg-linear-to-br from-swel-bg-card via-swel-accent2 to-swel-bg-card opacity-20" />
 
       {/* Left-to-right gradient overlay */}
-      <div
-        className="absolute inset-0 z-10"
-        style={{
-          background:
-            "linear-gradient(90deg, #F7F9FB 0%, rgba(247,249,251,0.95) 50%, rgba(247,249,251,0) 100%)",
-        }}
-      />
+      <div className="absolute inset-0 z-10 bg-linear-to-r from-swel-bg-light via-swel-bg-light/95 to-transparent" />
 
       {/* Content */}
       <div className="relative z-20 flex h-full items-center">
-        <div className="mx-auto max-w-[1200px] w-full px-8">
-          <div className="flex flex-col gap-[23px] max-w-[768px]">
+        <div className="mx-auto max-w-300 w-full px-8">
+          <div className="flex flex-col gap-[23px] max-w-3xl">
             {/* Badge */}
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-swel-accent w-fit">
               <span className="text-[12px] font-semibold tracking-[0.6px] text-swel-navy">
@@ -34,14 +21,14 @@ export default function Hero() {
             </div>
 
             {/* Heading */}
-            <h1 className="text-[48px] font-bold leading-[58px] tracking-[-0.96px] text-swel-navy max-w-[768px]">
-              Advancing Gender Equity in Global Surgery
+            <h1 className="text-[48px] font-bold leading-14.5 tracking-[-0.96px] text-swel-navy max-w-3xl">
+              Advancing and Designing
             </h1>
 
             {/* Subtitle */}
-            <p className="text-[18px] font-normal leading-[32px] text-swel-body max-w-[768px]">
-              Research. Advocacy. Systems Change. We are building the evidentiary
-              foundation for a more equitable surgical workforce worldwide.
+            <p className="text-[18px] font-normal leading-8 text-swel-body max-w-3xl">
+              Research. Advocacy. Systems Change. We are building the evidentiary foundation for a
+              more equitable surgical workforce worldwide.
             </p>
 
             {/* CTAs */}
@@ -68,5 +55,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  );
+  )
 }

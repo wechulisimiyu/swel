@@ -1,32 +1,32 @@
 const articles = [
   {
-    date: "OCT 24, 2024",
-    title: "Why Gender Data Gaps in Surgery Cost Lives",
+    date: 'OCT 24, 2024',
+    title: 'Why Gender Data Gaps in Surgery Cost Lives',
     description:
-      "A critical look at how missing demographic data in surgical research leads to systemic healthcare inequities.",
-    author: "Dr. A. Mensah",
+      'A critical look at how missing demographic data in surgical research leads to systemic healthcare inequities.',
+    author: 'Dr. A. Mensah',
   },
   {
-    date: "SEP 18, 2024",
-    title: "Redefining Resilience in Medical Training",
+    date: 'SEP 18, 2024',
+    title: 'Redefining Resilience in Medical Training',
     description:
-      "Moving beyond individual grit to institutional support systems that prevent surgeon burnout.",
-    author: "Dr. K. Osei",
+      'Moving beyond individual grit to institutional support systems that prevent surgeon burnout.',
+    author: 'Dr. K. Osei',
   },
   {
-    date: "AUG 05, 2024",
-    title: "Policy Brief: Equitable On-Call Structures",
+    date: 'AUG 05, 2024',
+    title: 'Policy Brief: Equitable On-Call Structures',
     description:
-      "Our latest recommendations for hospital administrators on creating family-inclusive staffing models.",
-    author: "Dr. L. Njoku",
+      'Our latest recommendations for hospital administrators on creating family-inclusive staffing models.',
+    author: 'Dr. L. Njoku',
   },
-];
+]
 
 export default function ThinkPieces() {
   return (
     <section className="bg-swel-bg-grey py-20">
-      <div className="mx-auto max-w-[1200px] px-8 flex flex-col gap-12">
-        <h2 className="text-[32px] font-bold leading-[42px] tracking-[-0.32px] text-swel-navy">
+      <div className="mx-auto max-w-300 px-8 flex flex-col gap-12">
+        <h2 className="text-[32px] font-bold leading-10.5 tracking-[-0.32px] text-swel-navy">
           Latest Think Pieces
         </h2>
 
@@ -40,18 +40,18 @@ export default function ThinkPieces() {
                 {article.date}
               </time>
 
-              <h3 className="text-[20px] font-normal leading-[25px] text-swel-navy">
+              <h3 className="text-[20px] font-normal leading-6 text-swel-navy">
                 {article.title}
               </h3>
 
-              <p className="text-[14px] leading-[20px] text-swel-body flex-1">
+              <p className="text-[14px] leading-5 text-swel-body flex-1">
                 {article.description}
               </p>
 
               {/* Author */}
               <div className="flex items-center gap-3 pt-2">
                 <div className="w-8 h-8 rounded-full bg-swel-divider flex-shrink-0" />
-                <span className="text-[12px] font-semibold leading-[16px] text-[#334155]">
+                <span className="text-[12px] font-semibold leading-4 text-[#334155]">
                   {article.author}
                 </span>
               </div>
@@ -60,5 +60,5 @@ export default function ThinkPieces() {
         </div>
       </div>
     </section>
-  );
+  )
 }

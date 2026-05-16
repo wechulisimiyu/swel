@@ -1,0 +1,12 @@
+{
+  "categories": {
+    "correctness": "warn",
+    "suspicious": "warn",
+    "perf": "warn",
+    "style": "off",
+    "restriction": "off",
+    "pedantic": "off"
+  },
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
+  "ignore": ["node_modules", ".next", "out", "dist", "build"]
+}

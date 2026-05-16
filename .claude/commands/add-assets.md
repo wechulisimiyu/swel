@@ -3,6 +3,7 @@
 Process and wire in image assets when the user drops them into the project.
 
 ## Trigger
+
 Use this when the user provides actual image files to replace placeholders.
 
 ---
@@ -23,6 +24,7 @@ done
 ```
 
 If `ffmpeg` is not available, try `cwebp`:
+
 ```bash
 cwebp -q 85 input.jpg -o public/images/output.webp
 ```
@@ -39,6 +41,7 @@ cwebp -q 85 input.jpg -o public/images/output.webp
 ## Step 2 — Place files
 
 Put all images under `public/images/`:
+
 ```
 public/
   images/
@@ -87,6 +90,7 @@ import Image from "next/image";
 ```
 
 **Rules:**
+
 - `priority` on the hero image and any image in the first viewport
 - `fill` + parent `position: relative` for background-style images
 - Always provide meaningful `alt` text; use `alt=""` only for purely decorative images
