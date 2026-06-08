@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Blog | Surgical Work and Equity Lab (SWEL)</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#46320b",
+                    "secondary-fixed": "#e4e2de",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-container": "#969bc9",
+                    "error": "#ba1a1a",
+                    "outline": "#77767f",
+                    "inverse-surface": "#303030",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed": "#ffdeaa",
+                    "surface-bright": "#fbf9f8",
+                    "primary-container": "#2d325a",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed": "#13183f",
+                    "primary-fixed": "#dfe0ff",
+                    "on-secondary-fixed": "#1b1c1a",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#5e5e5c",
+                    "on-surface": "#1b1c1c",
+                    "surface-container-low": "#f5f3f3",
+                    "on-tertiary-container": "#b79a6a",
+                    "on-error": "#ffffff",
+                    "on-secondary-container": "#636360",
+                    "inverse-on-surface": "#f2f0f0",
+                    "surface-variant": "#e4e2e2",
+                    "surface": "#fbf9f8",
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "surface-container-high": "#eae8e7",
+                    "on-tertiary-fixed": "#271900",
+                    "on-background": "#1b1c1c",
+                    "on-tertiary-fixed-variant": "#59431b",
+                    "on-primary-fixed-variant": "#3f446d",
+                    "tertiary-fixed-dim": "#e2c28f",
+                    "outline-variant": "#c7c5cf",
+                    "surface-dim": "#dbd9d9",
+                    "primary-fixed-dim": "#bfc3f4",
+                    "on-surface-variant": "#46464e",
+                    "secondary-container": "#e1dfdc",
+                    "on-secondary-fixed-variant": "#474744",
+                    "secondary-fixed-dim": "#c8c6c3",
+                    "inverse-primary": "#bfc3f4",
+                    "background": "#fbf9f8",
+                    "primary": "#171c43",
+                    "tertiary": "#2d1d00",
+                    "surface-tint": "#565b86",
+                    "surface-container-highest": "#e4e2e2",
+                    "surface-container": "#efeded"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-padding": "80px",
+                    "gutter": "24px",
+                    "container-max": "1200px",
+                    "margin-mobile": "16px",
+                    "unit": "8px"
+            },
+            "fontFamily": {
+                    "label-sm": ["Inter"],
+                    "h1": ["Inter"],
+                    "h3": ["Inter"],
+                    "body-md": ["Inter"],
+                    "h2": ["Inter"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "h1": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "h3": ["24px", {"lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.7", "letterSpacing": "0", "fontWeight": "400"}],
+                    "h2": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.75", "letterSpacing": "0", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fbf9f8;
+            color: #1b1c1c;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<header class="bg-surface dark:bg-surface-dim docked full-width top-0 sticky z-50 border-b border-outline-variant dark:border-outline shadow-sm">
+<div class="flex justify-between items-center max-w-[1200px] mx-auto px-gutter py-4">
+<div class="flex items-center gap-4">
+<img alt="SWEL Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpFccZoqK9Ho8RZSH5d1-GmQfUp-x93Jkq5fpAGaJRdEgpyaUytJAIKPgPKgWkvqWvarKxugPLy8xR-Ep-FBU1HJM0q7PqMHF5w6Kkos4-UNjmv7OGbq7TB2snN5YwuXgS5X4S9_iI465ihSrcEDpIuhCm7NkOKdNqeZo_Dr24o6XadNIK9rdaudCd-opfm3pwdH9om37Iq_UOSEaurWh_Jr1DBbUz-LECrPqNy-ZBRm4lJ8MHjJ6yP45TgIHWAnJAN_D6q70xhCI"/>
+<span class="font-h3 text-h3 font-bold text-primary dark:text-inverse-primary">SWEL</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 font-body-md text-body-md" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 font-body-md text-body-md" href="#">About</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 font-body-md text-body-md" href="#">Projects</a>
+<a class="text-primary dark:text-inverse-primary border-b-2 border-primary dark:border-inverse-primary pb-1 font-bold font-body-md text-body-md" href="#">Blog</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 font-body-md text-body-md" href="#">Learning Platform</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 font-body-md text-body-md" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-primary hover:bg-surface-container-low p-2 rounded-full transition-all">search</button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-sm text-label-sm hover:opacity-90 transition-all scale-95 duration-150 ease-out">Login</button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Editorial Hero -->
+<section class="max-w-[1200px] mx-auto px-gutter py-section-padding">
+<div class="relative rounded-xl overflow-hidden shadow-sm group">
+<div class="aspect-[21/9] w-full">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A professional medical environment featuring a close-up of a modern surgical suite with stainless steel surfaces and advanced monitoring equipment. The lighting is bright and high-key, emphasizing a clinical yet sophisticated academic atmosphere. The color palette is dominated by sterile whites and deep navy blues, reflecting the Surgical Work and Equity Lab's professional identity. The mood is one of quiet authority and intellectual rigor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAW52klYgzYhmbnRE3qeVyt8AfKULGRY04XlLunbHdt0WuvVDwcErtYDA_zSWuRWqemLLe1xiqvRR1iUft8Im3ym7LywXr-rvdHBTGZKnHyTHJS36v3cbd3WdAyCr0dX8wxYnKvuyufd61RHyDy42npVmeJ-CIHDvNLPKULeAb2f63feVp-Q5D2xZhiTr0J0I8PMmcZz5oGCY8quL6MVkkssTbjwgOneSNivW5QlR2dy6PXPnQLAAAMEvB4on6tes2R0wn-iwBYtMM"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-end p-12">
+<div class="flex gap-4 mb-6">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full font-label-sm text-label-sm">Featured</span>
+<span class="text-on-primary/80 font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span> 12-minute read
+                        </span>
+</div>
+<h1 class="font-h1 text-h1 text-white max-w-3xl mb-6">Navigating the Gap: Surgical Infrastructure and Economic Equity in 2024</h1>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary font-bold">AT</div>
+<div class="text-white">
+<p class="font-label-sm text-label-sm font-bold">Dr. Aris Thorne</p>
+<p class="font-label-sm text-label-sm opacity-80 italic">Published Jan 15, 2024</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Topic Filtering -->
+<section class="max-w-[1200px] mx-auto px-gutter pb-12">
+<div class="flex flex-wrap items-center gap-4 border-b border-outline-variant pb-6">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mr-4">Filter by Topic:</span>
+<button class="px-6 py-2 rounded-full bg-primary text-on-primary font-label-sm text-label-sm transition-all">All Posts</button>
+<button class="px-6 py-2 rounded-full border border-outline text-on-surface-variant hover:bg-surface-container-low font-label-sm text-label-sm transition-all">Gender Equity</button>
+<button class="px-6 py-2 rounded-full border border-outline text-on-surface-variant hover:bg-surface-container-low font-label-sm text-label-sm transition-all">Global Surgery Systems</button>
+<button class="px-6 py-2 rounded-full border border-outline text-on-surface-variant hover:bg-surface-container-low font-label-sm text-label-sm transition-all">Workforce &amp; Leadership</button>
+<button class="px-6 py-2 rounded-full border border-outline text-on-surface-variant hover:bg-surface-container-low font-label-sm text-label-sm transition-all">Policy &amp; Reform</button>
+</div>
+</section>
+<!-- Blog Feed Grid -->
+<section class="max-w-[1200px] mx-auto px-gutter mb-section-padding">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<article class="bg-white rounded-lg border border-outline-variant overflow-hidden flex flex-col group hover:shadow-lg transition-all duration-300">
+<div class="aspect-video overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A brightly lit hospital corridor with modern architectural lines and soft ambient lighting. The scene represents professional healthcare environments with a palette of soft whites and cool slates. The composition is clean and structured, reflecting academic minimalism and surgical precision. High-fidelity visual quality conveys trustworthiness and research excellence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkTrNkZA-a8dLIaHA71zu8lPi66RwOZF8jGP_EDSpLRMGGVV8qvgk1ONb7TERHXW8dO9GmpgWFhCnj1q6IKv6IJ4nOPIyt_k_oFNWhk3SIC-lKkCP79iPeqM1zkUXvLeeDkSB1GpVaU8LQiuPdug-wnRHwaHG2RwKnhc-s3l7Fqas8GzaF9qLiVDfyWkgC6d6zTTnPjZ3cBrOCgNtE6G3mZy5oAdPC3NRhiTcA0ZX65RZaYtoRLKLQ3tvvmvp3DxUFT_8xCIKnt6M"/>
+</div>
+<div class="p-8 flex-grow flex flex-col">
+<div class="flex items-center gap-2 mb-4">
+<span class="bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded font-label-sm text-[10px] uppercase">Workforce</span>
+<span class="text-on-surface-variant text-[12px]">8 min read</span>
+</div>
+<h3 class="font-h3 text-h3 mb-4 leading-snug group-hover:text-primary transition-colors">Breaking the Ceiling: Leadership Pipelines in Tertiary Surgery</h3>
+<p class="text-on-surface-variant font-body-md text-body-md line-clamp-3 mb-6">An analysis of institutional barriers preventing equitable promotion pathways for diverse candidates in specialized surgical departments across North America.</p>
+<div class="mt-auto pt-6 border-t border-outline-variant flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-primary">Read Article</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="bg-white rounded-lg border border-outline-variant overflow-hidden flex flex-col group hover:shadow-lg transition-all duration-300">
+<div class="aspect-video overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A wide-angle landscape shot of a mobile medical clinic stationed in a rural sub-Saharan African setting during the golden hour. The lighting is warm and natural, highlighting the contrast between cutting-edge medical equipment and the rugged landscape. The image uses a sophisticated, muted palette of ochre and deep blues. The mood is hopeful yet professionally grounded in surgical research." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeqRx5Mci5_cN5vc14KPGxtwSziNLtDZ1tD9K2WxrN1Hmug7piTcx6tfzOqJJCRXLkB8SdHitoLihap-2aIf1IsSS8oJXiiSya1fdtfR3_M1nrux_dezS6qH0DH0QGzFlnATZcovl6382s9bXJuhCa0u3cEBbh-Oo5HMlz08YSDp-UArqfEnWHXL4IIGG0f2Ey3O9DlfUpYllfhBhgGI1SrYZk4AGoGnUnpTmn3ENY6GK1tntoUTVkHSJPck2p7LDw2A9VhQQ8oG0"/>
+</div>
+<div class="p-8 flex-grow flex flex-col">
+<div class="flex items-center gap-2 mb-4">
+<span class="bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded font-label-sm text-[10px] uppercase">Global Systems</span>
+<span class="text-on-surface-variant text-[12px]">15 min read</span>
+</div>
+<h3 class="font-h3 text-h3 mb-4 leading-snug group-hover:text-primary transition-colors">Decentralizing Care: Mobile Surgical Units in Sub-Saharan Africa</h3>
+<p class="text-on-surface-variant font-body-md text-body-md line-clamp-3 mb-6">Evaluating the efficacy of mobile operating theaters in reducing post-operative mortality in remote regions lacking permanent tertiary infrastructure.</p>
+<div class="mt-auto pt-6 border-t border-outline-variant flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-primary">Read Article</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="bg-white rounded-lg border border-outline-variant overflow-hidden flex flex-col group hover:shadow-lg transition-all duration-300">
+<div class="aspect-video overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A minimalist, top-down view of an organized surgical workstation with a notebook, stethoscope, and clean medical diagrams. The setting is bright and orderly, utilizing white space to emphasize focus and precision. A sophisticated palette of whites, light grays, and deep indigo accents creates a serene, intellectual atmosphere. The lighting is soft and diffused, reflecting academic professionalism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBme2t5_ZyVsts-M5g_m2au5CjX5FnpmuGitKWNPUdgqr7R4XPzlCd4aHnZyENCfjx5jkVdsH5_Q_fqHUfKbXul4yMX81YTX0evxopheFnTf0Q_TOlzHTFqO2DZhLhPEneGBcrDNFYwZE6BnxgEwV5xvzblQgvfGaZfHSDW42bNxvlRsBfeIkg6wffikYkq736MC9x5ghtxv0qKgBC-0RSGeOi1SIE6ecXKwHiQNY2LsabPH2T0tGAkKpdBe-3J1mq2MqZeJ1UJmJY"/>
+</div>
+<div class="p-8 flex-grow flex flex-col">
+<div class="flex items-center gap-2 mb-4">
+<span class="bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded font-label-sm text-[10px] uppercase">Ethics</span>
+<span class="text-on-surface-variant text-[12px]">10 min read</span>
+</div>
+<h3 class="font-h3 text-h3 mb-4 leading-snug group-hover:text-primary transition-colors">The Ethics of Burnout: Reimagining the Surgical Residency</h3>
+<p class="text-on-surface-variant font-body-md text-body-md line-clamp-3 mb-6">A deep dive into the systemic origins of physician exhaustion and why burnout should be treated as a failure of institutional equity rather than personal resilience.</p>
+<div class="mt-auto pt-6 border-t border-outline-variant flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-primary">Read Article</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="bg-white rounded-lg border border-outline-variant overflow-hidden flex flex-col group hover:shadow-lg transition-all duration-300">
+<div class="aspect-video overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="An abstract visualization of global data flows using elegant, thin lines and soft glowing points on a dark navy canvas. The aesthetic is clean and high-end, representing sophisticated data research and global interconnectedness. The palette uses deep primary blues and soft gold accents. The mood is intellectual, suggesting the intersection of high-level finance and global health philanthropy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqGA8AyyLF00RvwEB_kzuTFE1DF44JkFEWyHXoaPBuXciUNSdFUt3bp_O2GdPVBTwKHX5IPI1SWTG65Xc0GpsI-ANHcjk5F6kFv0xIfFw0TszuMCkkRypu_8a8RvQbQxyjnS19H391UcNzuRqJh0BZOYh3OORb9ciDHpMZJO1Go_4ReXvvt-bHfiFX5D7_WiJnyZZBxa2JgjqBMLKixuoEM65PXKxDvE0kwsU2n5F-xCgOqt0X4D5KlEdETtFmmJNkX2BG-Kx55R4"/>
+</div>
+<div class="p-8 flex-grow flex flex-col">
+<div class="flex items-center gap-2 mb-4">
+<span class="bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded font-label-sm text-[10px] uppercase">Economics</span>
+<span class="text-on-surface-variant text-[12px]">18 min read</span>
+</div>
+<h3 class="font-h3 text-h3 mb-4 leading-snug group-hover:text-primary transition-colors">Global Funding Shifts: The Future of Surgical Philanthropy</h3>
+<p class="text-on-surface-variant font-body-md text-body-md line-clamp-3 mb-6">Tracking the movement of private equity and philanthropic capital into surgical capacity-building projects in middle-income nations.</p>
+<div class="mt-auto pt-6 border-t border-outline-variant flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-primary">Read Article</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</article>
+</div>
+<div class="mt-12 text-center">
+<button class="px-10 py-3 border border-primary text-primary hover:bg-surface-container-low rounded-lg font-label-sm text-label-sm transition-all duration-200">Load More Articles</button>
+</div>
+</section>
+<!-- Newsletter CTA -->
+<section class="bg-primary-container py-section-padding">
+<div class="max-w-[1200px] mx-auto px-gutter text-center">
+<div class="max-w-2xl mx-auto">
+<span class="text-on-tertiary-container font-label-sm text-label-sm uppercase tracking-widest mb-4 block">The Weekly Dispatch</span>
+<h2 class="font-h2 text-h2 text-white mb-6">Stay informed on the latest surgical equity research.</h2>
+<p class="text-on-primary-container font-body-md text-body-md mb-8">Receive a curated digest of peer-reviewed articles, lab updates, and policy analyses directly in your inbox.</p>
+<form class="flex flex-col md:flex-row gap-4 items-center justify-center">
+<input class="w-full md:w-80 px-6 py-4 rounded-lg bg-white/10 border border-white/20 text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary-fixed focus:border-transparent transition-all outline-none" placeholder="Institutional email address" type="email"/>
+<button class="w-full md:w-auto bg-primary-fixed text-on-primary-fixed px-10 py-4 rounded-lg font-label-sm text-label-sm font-bold hover:brightness-110 transition-all shadow-lg">Subscribe</button>
+</form>
+<p class="mt-6 text-on-primary-container text-[12px] opacity-60">We respect academic privacy. Unsubscribe at any time.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-container-lowest w-full py-section-padding mt-auto border-t border-outline-variant dark:border-outline">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter max-w-[1200px] mx-auto px-gutter">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2">
+<span class="font-h3 text-h3 font-bold text-primary dark:text-inverse-primary">SWEL</span>
+</div>
+<p class="text-on-surface-variant font-body-md text-body-md max-w-xs">Promoting health equity through academic rigor and surgical excellence.</p>
+<div class="flex gap-4 mt-2">
+<button class="material-symbols-outlined text-secondary hover:text-primary transition-colors">public</button>
+<button class="material-symbols-outlined text-secondary hover:text-primary transition-colors">description</button>
+<button class="material-symbols-outlined text-secondary hover:text-primary transition-colors">mail</button>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Resources</h4>
+<nav class="flex flex-col gap-2">
+<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary underline transition-all font-body-md text-body-md" href="#">Institutional Branding</a>
+<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary underline transition-all font-body-md text-body-md" href="#">Newsletter Signup</a>
+<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary underline transition-all font-body-md text-body-md" href="#">Resource Library</a>
+</nav>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Legal &amp; Contact</h4>
+<nav class="flex flex-col gap-2">
+<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary underline transition-all font-body-md text-body-md" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-inverse-primary underline transition-all font-body-md text-body-md" href="#">Contact Us</a>
+</nav>
+<p class="text-on-surface-variant text-[12px] opacity-70 mt-4 italic">© 2024 Surgical Work and Equity Lab. Promoting health equity through academic rigor.</p>
+</div>
+</div>
+</footer>
+</body></html>

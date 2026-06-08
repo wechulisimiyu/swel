@@ -1,0 +1,333 @@
+<!DOCTYPE html><html lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>SWEL | Surgical Work and Equity Lab</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error": "#ba1a1a",
+                    "on-surface-variant": "#46464e",
+                    "primary-fixed": "#dfe0ff",
+                    "secondary": "#5e5e5c",
+                    "on-secondary-fixed-variant": "#474744",
+                    "primary-container": "#2d325a",
+                    "on-primary-container": "#969bc9",
+                    "secondary-container": "#e1dfdc",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-container": "#b79a6a",
+                    "tertiary-fixed": "#ffdeaa",
+                    "outline-variant": "#c7c5cf",
+                    "on-primary-fixed-variant": "#3f446d",
+                    "surface-variant": "#e4e2e2",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-container": "#46320b",
+                    "surface-tint": "#565b86",
+                    "error-container": "#ffdad6",
+                    "inverse-surface": "#303030",
+                    "on-tertiary-fixed": "#271900",
+                    "surface-bright": "#fbf9f8",
+                    "background": "#fbf9f8",
+                    "surface-dim": "#dbd9d9",
+                    "surface-container-low": "#f5f3f3",
+                    "tertiary-fixed-dim": "#e2c28f",
+                    "inverse-primary": "#bfc3f4",
+                    "on-background": "#1b1c1c",
+                    "secondary-fixed-dim": "#c8c6c3",
+                    "primary": "#171c43",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "surface": "#fbf9f8",
+                    "outline": "#77767f",
+                    "on-error": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed": "#1b1c1a",
+                    "surface-container": "#efeded",
+                    "on-surface": "#1b1c1c",
+                    "on-primary-fixed": "#13183f",
+                    "surface-container-highest": "#e4e2e2",
+                    "tertiary": "#2d1d00",
+                    "inverse-on-surface": "#f2f0f0",
+                    "secondary-fixed": "#e4e2de",
+                    "on-secondary-container": "#636360",
+                    "surface-container-high": "#eae8e7",
+                    "primary-fixed-dim": "#bfc3f4",
+                    "on-tertiary-fixed-variant": "#59431b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "container-max": "1200px",
+                    "section-padding": "80px",
+                    "gutter": "24px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "label-sm": ["Inter"],
+                    "h1": ["Inter"],
+                    "h2": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "h3": ["Inter"]
+            },
+            "fontSize": {
+                    "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "h1": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "h2": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.75", "letterSpacing": "0", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.7", "letterSpacing": "0", "fontWeight": "400"}],
+                    "h3": ["24px", {"lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fbf9f8;
+            color: #1b1c1c;
+        }
+    </style>
+<style data-stitch-cursor=""></style><style data-stitch-scroll-lock=""></style></head>
+<body class="font-body-md text-body-md selection:bg-primary-fixed">
+<nav class="fixed top-0 w-full z-50 border-b bg-white/90 backdrop-blur-md dark:bg-slate-900/90 border-slate-100 dark:border-slate-800 shadow-sm">
+<div class="max-w-[1200px] mx-auto flex justify-between items-center px-8 h-16">
+<div class="flex items-center gap-3"><img alt="SWEL Logo" class="h-12 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE530Yx74OAwmjlC27FMIvVs5dzBN9cpdN6VS97C41MoggxRLpuLDMOa1i14S6RRTelyAgC1NWLEBvDpjqnPdP9CWVkNTh2TgkI6asTC16bxgPl4eEp_4a0rbL2TUUH1TIjFm7t3wadL3hsMOYCKvDagv6RziQ27JQAjwrh4iA5JkghmeVI1oIQ6X58_eOGEA85TOfdrmDb4s0uN42ZvTo3TOTm3iMcCDkBkpaJBGMOhmhon2a6QNcgEl0bv7diBG4-UXYCkZG56g"></div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-sm text-label-sm text-[#2D325A] dark:text-white border-b-2 border-[#2D325A] pb-1 hover:scale-105 active:scale-95 transition-transform" href="{{DATA:SCREEN:SCREEN_17}}">Home</a>
+<a class="font-label-sm text-label-sm text-slate-500 dark:text-slate-400 hover:text-[#2D325A] dark:hover:text-white transition-colors hover:scale-105 active:scale-95 transition-transform" href="{{DATA:SCREEN:SCREEN_20}}">About</a>
+<a class="font-label-sm text-label-sm text-slate-500 dark:text-slate-400 hover:text-[#2D325A] dark:hover:text-white transition-colors hover:scale-105 active:scale-95 transition-transform" href="{{DATA:SCREEN:SCREEN_28}}">Projects</a>
+<a class="font-label-sm text-label-sm text-slate-500 dark:text-slate-400 hover:text-[#2D325A] dark:hover:text-white transition-colors hover:scale-105 active:scale-95 transition-transform" href="{{DATA:SCREEN:SCREEN_35}}">Blog</a>
+<a class="font-label-sm text-label-sm text-slate-500 dark:text-slate-400 hover:text-[#2D325A] dark:hover:text-white transition-colors hover:scale-105 active:scale-95 transition-transform" href="{{DATA:SCREEN:SCREEN_32}}">Learning Platform</a>
+<a class="font-label-sm text-label-sm text-slate-500 dark:text-slate-400 hover:text-[#2D325A] dark:hover:text-white transition-colors hover:scale-105 active:scale-95 transition-transform" href="{{DATA:SCREEN:SCREEN_9}}">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-on-surface-variant hover:bg-slate-50 p-2 rounded-full transition-all active:scale-90 transition-transform">search</button>
+<button class="md:hidden material-symbols-outlined active:scale-90 transition-transform">menu</button>
+</div>
+</div>
+</nav>
+<main class="pt-16">
+<section class="relative h-[819px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-transparent z-10"></div>
+<img class="w-full h-full object-cover grayscale opacity-20" data-alt="professional surgical operating room in a global health setting with clean clinical lighting and medical equipment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOVUS1x3Dmi1zqmvmvVvV-HVfN59VM7P28EOMYem-rC46jzhstg5_e0s3c0qmrdsE-tLF-D-NCp8q3_MBj6Zu6T8UXP24lGs1dbXvJjxw0dBg5V3Lby080MW2m-yKwX4-O0aDBA4puzoCtAKOwdXQceLCKAGgVOQ5TGxf9qh-G4j8ckqR5eL8vdEZfCPMvatPkW4gJb5dg_KWPhi8DeVJyTa-bqaWjD2Tb4pSCbcp6DUX9L8iqGpqZvNRk_5UkgiBxoFvGnqs692A">
+</div>
+<div class="max-w-[1200px] mx-auto px-8 w-full relative z-20">
+<div class="max-w-3xl"><div class="mb-6"><img alt="SWEL Institutional Logo" class="h-[100px] w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBL0Ue6Mku_QGop9SoKgLShKMFlIKTBQltYw4Pt22um1ZzO_aHp5LaGB7OaKF-9HUb8HXoixpH-6PGxY8uzbAZAi8lY8BO20gUAVfAXJyUEJHHGEsqI3t24h3r7grjgI1g8EDpc-BM8lIb4x82hS_6ZRDuILG6Xc21jAQO5YiLMIOnc3mTGbsvWZGTG92TTkY7MNH2eyyXWJdDBnFealL_aiw4Pldqli2ki2JsrMo-APW0bDEm7G3wCf3BXiO2c2ZJnA3jM61o5L8s" style="height: auto; width: 600px; object-fit: contain;"></div>
+<span class="inline-block px-3 py-1 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm rounded-full mb-6">EST. 2025</span>
+<h1 class="font-h1 text-h1 text-primary mb-6">Advancing Gender Equity in Global Surgery</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10">Research. Advocacy. Systems Change. We are building the evidentiary foundation for a more equitable surgical workforce worldwide.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 font-label-sm text-label-sm rounded-lg hover:opacity-90 transition-all shadow-lg hover:scale-105 active:scale-95 transition-transform">Explore Our Work</button>
+<button class="border-2 border-primary text-primary px-8 py-4 font-label-sm text-label-sm rounded-lg hover:bg-primary-fixed/30 transition-all hover:scale-105 active:scale-95 transition-transform">Join the Movement</button>
+</div>
+</div>
+</div>
+</section>
+<section class="py-[80px] bg-white">
+<div class="max-w-[1200px] mx-auto px-8">
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-h2 text-h2 text-primary mb-8">About the Lab</h2>
+<div class="space-y-6 text-on-surface-variant font-body-md text-body-md leading-relaxed">
+<p class="">The Surgical Work and Equity Lab (SWEL) operates at the critical intersection of clinical excellence and social justice. Our mission is to dismantle structural barriers that prevent equitable participation in surgical careers.</p>
+<p class="">Through rigorous, peer-reviewed methodology and collaborative global partnerships, we produce actionable data that informs policy and transforms institutional cultures.</p>
+</div>
+<div class="mt-8 grid grid-cols-3 gap-4">
+<div class="text-center p-4 border border-outline-variant rounded-xl">
+<div class="text-h3 font-h3 text-primary">15+</div>
+<div class="text-label-sm font-label-sm text-slate-500">Countries</div>
+</div>
+<div class="text-center p-4 border border-outline-variant rounded-xl">
+<div class="text-h3 font-h3 text-primary">42</div>
+<div class="text-label-sm font-label-sm text-slate-500">Publications</div>
+</div>
+<div class="text-center p-4 border border-outline-variant rounded-xl">
+<div class="text-h3 font-h3 text-primary">8M</div>
+<div class="text-label-sm font-label-sm text-slate-500">Impact</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square bg-surface-container rounded-2xl overflow-hidden shadow-xl">
+<img class="w-full h-full object-cover" data-alt="diverse group of medical researchers collaborating in a bright modern academic office with papers and diagrams" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfHkjzdbDtxWDATS4J1ctVzS8JPTj4eJrv1fyRV9nNK9bn3fNQVLXmjIT_QFLHw5ylpOH6ZY3aHUw8SjzM5kevdrVRiryGwGgNS4zqSngOXrHYTQrgoK5tA8IPJaxowdbydb5CwGiSVLWmLSHdv6n_Sdg035L9xez2quOvqtP5tqQm-kYq80aVIkSysuS-VqpaoXXYIAnVix25jcs61P8PrlQ_IWxKOFMxJJtMhE86Lz7rltpqcsujT5dnQDTfftEXayGzzyONVSY">
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-[80px] bg-background">
+<div class="max-w-[1200px] mx-auto px-8">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<h2 class="font-h2 text-h2 text-primary mb-4">Key Focus Areas</h2>
+<p class="text-on-surface-variant">Our research framework addresses the surgical pipeline from undergraduate training to executive leadership.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded-2xl shadow-sm border border-outline-variant hover:shadow-md transition-all group">
+<div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-xl mb-6 text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">school</span>
+</div>
+<h3 class="font-h3 text-h3 mb-4">Surgical Training</h3>
+<p class="text-on-surface-variant font-body-md">Investigating gendered experiences in residency and the impact of mentorship on trainee retention.</p>
+</div>
+<div class="bg-white p-8 rounded-2xl shadow-sm border border-outline-variant hover:shadow-md transition-all group">
+<div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-xl mb-6 text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">groups</span>
+</div>
+<h3 class="font-h3 text-h3 mb-4">Workforce Disparities</h3>
+<p class="text-on-surface-variant font-body-md">Mapping the global distribution of the surgical workforce with a lens on intersectional equity.</p>
+</div>
+<div class="bg-white p-8 rounded-2xl shadow-sm border border-outline-variant hover:shadow-md transition-all group">
+<div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-xl mb-6 text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">account_balance</span>
+</div>
+<h3 class="font-h3 text-h3 mb-4">Policy &amp; Systems</h3>
+<p class="text-on-surface-variant font-body-md">Advocating for institutional changes that support work-life integration and pay equity.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-[80px] bg-white">
+<div class="max-w-[1200px] mx-auto px-8">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="font-h2 text-h2 text-primary">Featured Projects</h2>
+<p class="text-on-surface-variant mt-2">Active initiatives driving global change.</p>
+</div>
+<a class="text-primary font-label-sm text-label-sm border-b-2 border-primary pb-1" href="#">View All Projects</a>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="group relative overflow-hidden rounded-2xl border border-outline-variant">
+<div class="aspect-[16/9]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="close up of a world map with medical stethoscope resting on top symbolising global healthcare" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlmZPn9eJ22RbuDp4WUiJf0igsqbkVDKsYAdPbcHsQuc7pIFxVmYoOQQxHIa98TKAwnCCH5j5mRxVmIZYYmMjF_FRZOvF-Pj4h_KHXiJA9bq6hFcnjTzUfMDNcnQlcanw50GqfQUMKGupFU7CULiKY4C5ZacHkPbolODrnK9xHjiV9-nm5kstGAwYq1DArPjYb_zE_Uj2-s1NLhNOwZENMB1Idmc_OOOVP2VxcPGFEIosQRPTgKp0SU_BZtfKH4EhOco8FawU3czc">
+</div>
+<div class="p-8">
+<div class="flex gap-2 mb-4">
+<span class="px-2 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-bold rounded">GLOBAL SOUTH</span>
+<span class="px-2 py-1 bg-tertiary-fixed text-on-tertiary-fixed text-[10px] font-bold rounded">DATA STUDY</span>
+</div>
+<h3 class="font-h3 text-h3 mb-3">The Global Atlas of Surgical Equity</h3>
+<p class="text-on-surface-variant mb-6">A comprehensive 5-year study mapping surgical access for women in rural Sub-Saharan Africa.</p>
+<button class="flex items-center gap-2 text-primary font-semibold hover:gap-4 transition-all active:scale-95 transition-transform hover:scale-105">
+                                Read Case Study <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-2xl border border-outline-variant">
+<div class="aspect-[16/9]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="modern medical lecture hall with professional presenters and data charts on screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdyMsEMaNcEIgcsyxge1jVKKY4YBPtE-lI2WodAYKxSMkaUYnSmsZrO1XBhfqSaJ32y0HO3g87AhYrZWZGe_lhbYsNylSjWNVbO6DTco9wmLBPvUoY74VRv48UahLju6hXdfRxcWNmbbAam_QE_5NudNhYfQzp2LjW2aQKgj_14QqWdDUKhE0Dqcwn5DKQpwjLr_6Yelu9KIQwjx1Jzmx7QcSGx65OlCtBrhLAnB5w3zQKoWkWDQGbWOhcrbAUDwovRiQkgjuyBuU">
+</div>
+<div class="p-8">
+<div class="flex gap-2 mb-4">
+<span class="px-2 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-bold rounded">TRAINING</span>
+<span class="px-2 py-1 bg-tertiary-fixed text-on-tertiary-fixed text-[10px] font-bold rounded">MENTORSHIP</span>
+</div>
+<h3 class="font-h3 text-h3 mb-3">Mentorship Reimagined</h3>
+<p class="text-on-surface-variant mb-6">Developing a standardized framework for surgical mentorship across high-income and LMIC contexts.</p>
+<button class="flex items-center gap-2 text-primary font-semibold hover:gap-4 transition-all active:scale-95 transition-transform hover:scale-105">
+                                Read Case Study <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-[80px] bg-surface-container-low">
+<div class="max-w-[1200px] mx-auto px-8">
+<h2 class="font-h2 text-h2 text-primary mb-12">Latest Think Pieces</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<article class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-all">
+<time class="text-label-sm font-label-sm text-slate-400 mb-4 block">OCT 24, 2024</time>
+<h4 class="font-h3 text-[20px] leading-tight mb-4 text-primary hover:text-surface-tint cursor-pointer">Why Gender Data Gaps in Surgery Cost Lives</h4>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-3">A critical look at how missing demographic data in surgical research leads to systemic healthcare inequities.</p>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-slate-200"></div>
+<span class="text-xs font-semibold text-slate-700">Dr. Sarah Jenkins</span>
+</div>
+</article>
+<article class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-all">
+<time class="text-label-sm font-label-sm text-slate-400 mb-4 block">SEP 18, 2024</time>
+<h4 class="font-h3 text-[20px] leading-tight mb-4 text-primary hover:text-surface-tint cursor-pointer">Redefining Resilience in Medical Training</h4>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-3">Moving beyond individual grit to institutional support systems that prevent surgeon burnout.</p>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-slate-200"></div>
+<span class="text-xs font-semibold text-slate-700">Dr. Michael Chen</span>
+</div>
+</article>
+<article class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-all">
+<time class="text-label-sm font-label-sm text-slate-400 mb-4 block">AUG 05, 2024</time>
+<h4 class="font-h3 text-[20px] leading-tight mb-4 text-primary hover:text-surface-tint cursor-pointer">Policy Brief: Equitable On-Call Structures</h4>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-3">Our latest recommendations for hospital administrators on creating family-inclusive staffing models.</p>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-slate-200"></div>
+<span class="text-xs font-semibold text-slate-700">SWEL Policy Team</span>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="py-[80px] px-8">
+<div class="max-w-[1200px] mx-auto bg-primary rounded-[32px] overflow-hidden relative shadow-2xl">
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-white via-transparent to-transparent"></div>
+<div class="relative z-10 p-12 md:p-20 text-center max-w-4xl mx-auto">
+<span class="material-symbols-outlined text-white text-5xl mb-8" style="font-variation-settings: &quot;FILL&quot; 1;">local_library</span>
+<h2 class="font-h1 text-h1 text-white mb-6">Learning Platform</h2>
+<p class="font-body-lg text-body-lg text-indigo-100 mb-10">Access our curated database of toolkits, curriculum guides, and research methodologies designed to foster equity in your local institution.</p>
+<button class="bg-white text-primary px-10 py-5 font-bold rounded-xl hover:bg-slate-50 transition-all flex items-center gap-3 mx-auto shadow-xl hover:scale-105 active:scale-95 transition-transform">
+                        Explore Learning Modules
+                        <span class="material-symbols-outlined">open_in_new</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<footer class="w-full border-t bg-white dark:bg-slate-950 border-slate-200 dark:border-slate-800">
+<div class="max-w-[1200px] mx-auto py-12 px-8 flex flex-col md:flex-row justify-between gap-8">
+<div class="max-w-sm">
+<div class="text-lg font-bold text-[#2D325A] dark:text-white mb-4">SWEL</div>
+<p class="font-['Inter'] text-xs leading-relaxed text-slate-500 mb-6">© 2024 Surgical Work and Equity Lab. Focused on surgical precision and social equity. A multidisciplinary initiative dedicated to clinical excellence and global health justice.</p>
+<div class="flex gap-4">
+<a class="material-symbols-outlined text-slate-400 hover:text-primary" href="#">language</a>
+<a class="material-symbols-outlined text-slate-400 hover:text-primary" href="#">mail</a>
+<a class="material-symbols-outlined text-slate-400 hover:text-primary" href="#">share</a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-12 md:gap-24">
+<div class="space-y-4">
+<h5 class="font-bold text-sm text-[#2D325A] dark:text-white uppercase tracking-wider">Lab</h5>
+<ul class="space-y-2">
+<li class=""><a class="text-slate-500 hover:text-[#2D325A] transition-colors font-['Inter'] text-xs hover:underline decoration-[#2D325A]/30" href="#">Our Team</a></li>
+<li class=""><a class="text-slate-500 hover:text-[#2D325A] transition-colors font-['Inter'] text-xs hover:underline decoration-[#2D325A]/30" href="#">Impact Map</a></li>
+<li class=""><a class="text-slate-500 hover:text-[#2D325A] transition-colors font-['Inter'] text-xs hover:underline decoration-[#2D325A]/30" href="#">Annual Report</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="font-bold text-sm text-[#2D325A] dark:text-white uppercase tracking-wider">Resources</h5>
+<ul class="space-y-2">
+<li class=""><a class="text-slate-500 hover:text-[#2D325A] transition-colors font-['Inter'] text-xs hover:underline decoration-[#2D325A]/30" href="#">Privacy Policy</a></li>
+<li class=""><a class="text-slate-500 hover:text-[#2D325A] transition-colors font-['Inter'] text-xs hover:underline decoration-[#2D325A]/30" href="#">Terms of Service</a></li>
+<li class=""><a class="text-slate-500 hover:text-[#2D325A] transition-colors font-['Inter'] text-xs hover:underline decoration-[#2D325A]/30" href="#">Institutional Access</a></li>
+<li class=""><a class="text-slate-500 hover:text-[#2D325A] transition-colors font-['Inter'] text-xs hover:underline decoration-[#2D325A]/30" href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+
+
+</body></html>
