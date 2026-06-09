@@ -119,3 +119,78 @@ This affects the WebP conversion pipeline (Issue #5) and whether we need a
 photography/video shoot or can use stock/illustration.
 
 **Blocks:** Issue #5 (image asset pipeline)
+
+---
+
+## D7: Shape language — sharp vs rounded?
+
+**Status:** Pending
+
+**Context:** The two design specs are in direct conflict and both are used in the codebase:
+
+| Spec | Corner style |
+|------|-------------|
+| Academic Editorial | 0px radius everywhere (sharp corners) |
+| Global Health Research Framework | 8-12px radius (rounded cards/buttons) |
+
+The current codebase uses a mix: `rounded-sm`, `rounded-lg`, `rounded-xl`,
+`rounded-2xl`, `rounded-[32px]`, `rounded-full` — no consistent rationale.
+
+**Recommendation:** The stitch extraction (`docs/pages/home/code.html`) predominantly
+uses `rounded-xl` (12px) on cards and `rounded-lg` (8px) on buttons, with
+`rounded-[32px]` on the CTA block. Standardize to the Global Health spec (8-12px)
+as it matches the extracted designs most closely.
+
+**Blocks:** Phase 1 (design system), #8 (dedicated shape language issue)
+
+---
+
+## D8: Search functionality — hide or implement?
+
+**Status:** Pending
+
+**Context:** `nav.tsx:48-53` renders a Search icon button with no `onClick` handler,
+no search modal, no search route. It is a dead UI element.
+
+**Recommendation:** Comment out or hide the search button until a search feature
+is scoped. A non-functional element erodes trust more than its absence. If the
+stakeholder requires search, scope it as a separate feature with a dedicated
+search page or modal.
+
+**Blocks:** Phase 4 (polish), #9 (dedicated search issue)
+
+---
+
+## D9: Social link destinations
+
+**Status:** Blocked — needs stakeholder input
+
+**Context:** Footer social icons (Twitter/X, LinkedIn, Email) are hardcoded to
+`href="#"`. The icons exist but have no destination URLs.
+
+**Recommendation:** Remove the icons or replace `#` with real SWEL social media
+URLs. If SWEL has no social media presence, remove the icons entirely — dead
+links are worse than no links.
+
+**Blocks:** Phase 4 (polish), #10 (dedicated social links issue)
+
+---
+
+## D10: `/access` route meaning
+
+**Status:** Blocked — needs stakeholder input
+
+**Context:** The footer lists "Institutional Access" under the Legal column,
+linking to `/access`. It is unclear whether this refers to:
+- **Accessibility** (a11y compliance, WCAG statement)
+- **Institutional login** (single sign-on for researchers)
+- **Surgical access** (publications about surgical access — matches lab mission)
+
+The page is 404. The label "Institutional Access" suggests SSO/login, but that
+is unusual for an academic lab website.
+
+**Recommendation:** Clarify with stakeholder. Most likely option: rename to
+"Accessibility" and link to an a11y statement page. If it's SSO, that's a
+significant feature and should be tracked separately.
+
+**Blocks:** Phase 4 (polish), #12 (dedicated /access issue)
