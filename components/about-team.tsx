@@ -32,10 +32,10 @@ export default function AboutTeam() {
           {/* Header */}
           <div className="flex items-end justify-between">
             <div className="flex flex-col gap-[0.01px]">
-              <h2 className="text-h2 font-bold leading-10.5 tracking-[-0.32px] text-swel-navy-mid">
+              <h2 className="text-h2 text-swel-navy-mid">
                 Our Team
               </h2>
-              <p className="text-body-lg leading-8 text-swel-body">
+              <p className="text-body-lg text-swel-body">
                 Meet the people behind the research.
               </p>
             </div>
@@ -63,7 +63,7 @@ export default function AboutTeam() {
                   <h4 className="text-body-lg font-bold leading-8 text-swel-navy-mid">
                     {member.name}
                   </h4>
-                  <span className="text-label font-semibold leading-3 tracking-[0.6px] uppercase text-swel-body">
+                  <span className="text-label uppercase text-swel-body">
                     {member.role}
                   </span>
                 </div>

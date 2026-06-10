@@ -14,11 +14,11 @@ export default function CTABlock() {
             <Hexagon className="w-9 h-11 text-white" fill="white" />
           </div>
 
-          <h2 className="text-h1 font-bold leading-14.5 tracking-[-0.96px] text-white pt-2">
+          <h2 className="text-h1 text-white pt-2">
             Join Us
           </h2>
 
-          <p className="text-body-lg leading-8 text-swel-cta-light pb-4">
+          <p className="text-body-lg text-swel-cta-light pb-4">
             Partner with SWEL to shape the future of an equitable surgical workforce. Whether you
             are a researcher, clinician, or institution, your collaboration matters.
           </p>
@@ -27,7 +27,7 @@ export default function CTABlock() {
             href="/get-involved"
             className="relative flex items-center gap-3 px-10 py-5 rounded-xl bg-white shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_8px_10px_-6px_rgba(0,0,0,0.1)] hover:bg-swel-bg transition-colors"
           >
-            <span className="text-body font-bold leading-6.5 text-swel-navy">
+            <span className="text-body font-bold text-swel-navy">
               Become a Research Partner
             </span>
             <ArrowRight className="w-4 h-4 text-swel-navy" />

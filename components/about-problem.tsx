@@ -5,7 +5,7 @@ export default function AboutProblem() {
         <div className="flex gap-12">
           {/* Left heading */}
           <div className="flex flex-col gap-4 w-1/3">
-            <h2 className="text-h2 font-bold leading-10.5 tracking-[-0.32px] text-swel-navy-mid">
+            <h2 className="text-h2 text-swel-navy-mid">
               The Challenge we address.
             </h2>
             <div className="w-16 h-1 bg-swel-accent-line" />
@@ -16,10 +16,10 @@ export default function AboutProblem() {
             {/* Card 1 */}
             <div className="flex-1 bg-white border border-swel-border shadow-[0_1px_2px_rgba(0,0,0,0.05)] rounded-lg p-8 flex flex-col gap-3">
               <div className="w-10 h-10 bg-swel-navy-mid rounded-sm" />
-              <h3 className="text-2xl font-semibold leading-8 text-swel-heading pt-1">
+              <h3 className="text-h3 leading-8 text-swel-heading pt-1">
                 Global Surgical Inequity
               </h3>
-              <p className="text-lg leading-6 text-swel-body">
+              <p className="text-body-lg leading-6 text-swel-body">
                 Over 5 billion people lack access to safe, affordable surgical care. We analyze the
                 structural determinants that perpetuate this disparity in low-resource settings.
               </p>
@@ -28,10 +28,10 @@ export default function AboutProblem() {
             {/* Card 2 */}
             <div className="flex-1 bg-white border border-swel-border shadow-[0_1px_2px_rgba(0,0,0,0.05)] rounded-lg p-8 flex flex-col gap-3">
               <div className="w-10 h-10 bg-swel-navy-mid rounded-sm" />
-              <h3 className="text-2xl font-semibold leading-8 text-swel-heading pt-1">
+              <h3 className="text-h3 leading-8 text-swel-heading pt-1">
                 Leadership Disparities
               </h3>
-              <p className="text-lg leading-6 text-swel-body">
+              <p className="text-body-lg leading-6 text-swel-body">
                 Gender and ethnic representation in surgical leadership remains stagnant. Our work
                 targets the biases that exclude talented surgeons from decision-making roles.
               </p>

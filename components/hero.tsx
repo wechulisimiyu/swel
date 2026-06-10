@@ -15,18 +15,18 @@ export default function Hero() {
           <div className="flex flex-col gap-[23px] max-w-3xl">
             {/* Badge */}
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-swel-accent w-fit">
-              <span className="text-label font-semibold tracking-[0.6px] text-swel-navy">
+              <span className="text-label text-swel-navy">
                 SWEL LAB
               </span>
             </div>
 
             {/* Heading */}
-            <h1 className="text-h1 font-bold leading-14.5 tracking-[-0.96px] text-swel-navy max-w-3xl">
+            <h1 className="text-h1 text-swel-navy max-w-3xl">
               Advancing and Designing
             </h1>
 
             {/* Subtitle */}
-            <p className="text-body-lg font-normal leading-8 text-swel-body max-w-3xl">
+            <p className="text-body-lg font-normal text-swel-body max-w-3xl">
               Research. Advocacy. Systems Change. We are building the evidentiary foundation for a
               more equitable surgical workforce worldwide.
             </p>
@@ -37,7 +37,7 @@ export default function Hero() {
                 href="/research"
                 className="relative flex items-center justify-center px-8 py-[17.5px] rounded-lg bg-swel-navy shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-4px_rgba(0,0,0,0.1)] hover:bg-swel-navy/90 transition-colors"
               >
-                <span className="text-label font-semibold tracking-[0.6px] text-white">
+                <span className="text-label text-white">
                   EXPLORE OUR RESEARCH
                 </span>
               </Link>
@@ -46,7 +46,7 @@ export default function Hero() {
                 href="/publications"
                 className="flex items-center justify-center px-8 py-[16px] rounded-lg border-2 border-swel-navy hover:bg-swel-navy/5 transition-colors"
               >
-                <span className="text-label font-semibold tracking-[0.6px] text-swel-navy">
+                <span className="text-label text-swel-navy">
                   VIEW PUBLICATIONS
                 </span>
               </Link>

@@ -77,7 +77,7 @@ export default function Footer() {
         <div className="flex gap-16">
           {/* About column */}
           <div className="flex flex-col gap-4">
-            <h5 className="text-body-sm font-bold leading-5 tracking-[0.7px] uppercase text-swel-navy-mid">
+            <h5 className="text-body-sm font-bold tracking-[0.7px] uppercase text-swel-navy-mid">
               About
             </h5>
             <ul className="flex flex-col gap-2">
@@ -96,7 +96,7 @@ export default function Footer() {
 
           {/* Legal column */}
           <div className="flex flex-col gap-4">
-            <h5 className="text-body-sm font-bold leading-5 tracking-[0.7px] uppercase text-swel-navy-mid">
+            <h5 className="text-body-sm font-bold tracking-[0.7px] uppercase text-swel-navy-mid">
               Legal
             </h5>
             <ul className="flex flex-col gap-2">

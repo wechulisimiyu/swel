@@ -6,11 +6,11 @@ export default function AboutMissionVision() {
           {/* Mission card — left side */}
           <div className="flex-1 bg-swel-navy-mid rounded-xl p-12 flex flex-col justify-end relative overflow-hidden">
             <div className="flex flex-col gap-2 pb-2">
-              <span className="text-label font-semibold leading-3 tracking-[0.6px] uppercase text-swel-accent2">
+              <span className="text-label uppercase text-swel-accent2">
                 MISSION
               </span>
             </div>
-            <h2 className="text-h2 font-bold leading-10.5 tracking-[-0.32px] text-white">
+            <h2 className="text-h2 text-white">
               To produce rigorous, actionable research that drives policy reform and transforms
               institutional cultures in surgical care.
             </h2>
@@ -24,11 +24,11 @@ export default function AboutMissionVision() {
           {/* Vision card — right side */}
           <div className="flex-1 bg-swel-navy rounded-xl p-12 flex flex-col justify-end">
             <div className="flex flex-col gap-2 pb-2">
-              <span className="text-label font-semibold leading-3 tracking-[0.6px] uppercase text-swel-accent">
+              <span className="text-label uppercase text-swel-accent">
                 VISION
               </span>
             </div>
-            <h2 className="text-h2 font-bold leading-10.5 tracking-[-0.32px] text-white">
+            <h2 className="text-h2 text-white">
               A surgical ecosystem where every patient and practitioner thrives regardless of geography
               or identity.
             </h2>

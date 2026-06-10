@@ -5,15 +5,15 @@ export default function AboutHero() {
         <div className="flex items-center gap-12">
           {/* Left column — text content */}
           <div className="flex flex-col gap-4 flex-1">
-            <span className="text-label font-semibold leading-3 tracking-[1.2px] uppercase text-swel-label">
+            <span className="text-label uppercase text-swel-label">
               OUR IDENTITY
             </span>
 
-            <h1 className="text-h1 font-bold leading-14.5 tracking-[-0.96px] text-swel-navy-mid">
+            <h1 className="text-h1 text-swel-navy-mid">
               Advancing and Designing
             </h1>
 
-            <p className="text-body-lg leading-8 text-swel-body max-w-xl">
+            <p className="text-body-lg text-swel-body max-w-xl">
               The Surgical Work and Equity Lab (SWEL) is an interdisciplinary research collective
               dedicated to dismantling systemic barriers in global surgery and healthcare leadership.
             </p>

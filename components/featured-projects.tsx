@@ -31,16 +31,16 @@ export default function FeaturedProjects() {
         {/* Header row */}
         <div className="flex items-end justify-between">
           <div className="flex flex-col gap-1.75">
-            <h2 className="text-h2 font-bold leading-10.5 tracking-[-0.32px] text-swel-navy">
+            <h2 className="text-h2 text-swel-navy">
               Featured Projects
             </h2>
-            <p className="text-body leading-6.5 text-swel-body">
+            <p className="text-body text-swel-body">
               Landmark studies shaping the field.
             </p>
           </div>
           <Link
             href="/research"
-            className="border-b-2 border-swel-navy pb-1 text-label font-semibold tracking-[0.6px] text-swel-navy hover:opacity-70 transition-opacity"
+            className="border-b-2 border-swel-navy pb-1 text-label text-swel-navy hover:opacity-70 transition-opacity"
           >
             VIEW ALL RESEARCH
           </Link>
@@ -65,22 +65,22 @@ export default function FeaturedProjects() {
                   {project.tags.map((tag) => (
                     <span
                       key={tag.label}
-                      className={`px-2 py-1 rounded text-caption font-bold leading-4 ${tag.color}`}
+                      className={`px-2 py-1 rounded text-caption ${tag.color}`}
                     >
                       {tag.label}
                     </span>
                   ))}
                 </div>
 
-                <h3 className="text-h3 font-semibold leading-8.5 text-swel-heading pt-1">
+                <h3 className="text-h3 text-swel-heading pt-1">
                   {project.title}
                 </h3>
 
-                <p className="text-body leading-6.5 text-swel-body">{project.description}</p>
+                <p className="text-body text-swel-body">{project.description}</p>
 
                 <Link
                   href={project.href}
-                  className="inline-flex items-center gap-2 text-body font-semibold leading-6.5 text-swel-navy hover:opacity-70 transition-opacity"
+                  className="inline-flex items-center gap-2 text-body font-semibold text-swel-navy hover:opacity-70 transition-opacity"
                 >
                   Read More
                   <ArrowUpRight className="w-4 h-4" />
