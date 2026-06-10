@@ -35,7 +35,7 @@ export default function Hero() {
             <div className="flex items-center gap-4 pt-1">
               <Link
                 href="/research"
-                className="relative flex items-center justify-center px-8 py-[17.5px] rounded-lg bg-swel-navy shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-4px_rgba(0,0,0,0.1)] hover:bg-swel-navy/90 transition-colors"
+                className="relative flex items-center justify-center px-8 py-[17.5px] rounded-lg bg-swel-navy shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-4px_rgba(0,0,0,0.1)] hover:bg-swel-navy/90 transition-all hover:scale-105 active:scale-95"
               >
                 <span className="text-label text-white">
                   EXPLORE OUR RESEARCH
@@ -44,7 +44,7 @@ export default function Hero() {
 
               <Link
                 href="/publications"
-                className="flex items-center justify-center px-8 py-[16px] rounded-lg border-2 border-swel-navy hover:bg-swel-navy/5 transition-colors"
+                className="flex items-center justify-center px-8 py-[16px] rounded-lg border-2 border-swel-navy hover:bg-swel-navy/5 transition-all hover:scale-105 active:scale-95"
               >
                 <span className="text-label text-swel-navy">
                   VIEW PUBLICATIONS

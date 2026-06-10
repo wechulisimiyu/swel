@@ -51,11 +51,11 @@ export default function FeaturedProjects() {
           {projects.map((project) => (
             <div
               key={project.title}
-              className="flex flex-col border border-swel-border rounded-2xl overflow-hidden"
+              className="flex flex-col border border-swel-border rounded-2xl overflow-hidden group"
             >
               {/* Image placeholder */}
               <div className="w-full aspect-video bg-swel-bg-card flex items-center justify-center overflow-hidden">
-                <div className="w-full h-full opacity-40 bg-linear-to-br from-swel-bg-card via-swel-accent2 to-swel-bg-card" />
+                <div className="w-full h-full opacity-40 bg-linear-to-br from-swel-bg-card via-swel-accent2 to-swel-bg-card group-hover:scale-105 transition-transform duration-500" />
               </div>
 
               {/* Card content */}

@@ -39,7 +39,7 @@ export default function AboutApproach() {
             {approaches.map((item) => (
               <div
                 key={item.number}
-                className="flex flex-col gap-3 pl-8 border-l-2 border-swel-border pt-4 pb-4"
+                className="flex flex-col gap-3 pl-8 border-l-2 border-swel-border pt-4 pb-4 hover:border-swel-navy-mid transition-colors"
               >
                 <span className="text-label text-swel-body">
                   {item.number}

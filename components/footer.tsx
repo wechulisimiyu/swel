@@ -7,9 +7,6 @@ const aboutLinks = [
 ]
 
 const legalLinks = [
-  { label: 'Privacy Policy', href: '/privacy' },
-  { label: 'Terms of Service', href: '/terms' },
-  { label: 'Institutional Access', href: '/access' },
   { label: 'Contact', href: '/contact' },
 ]
 

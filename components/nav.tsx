@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Search } from 'lucide-react'
 
 const navLinks = [
   { label: 'Home', href: '/' },
@@ -43,14 +42,6 @@ export default function Nav() {
             )
           })}
         </div>
-
-        {/* Search icon */}
-        <button
-          aria-label="Search"
-          className="flex items-center justify-center w-[34px] h-[34px] rounded-full hover:bg-swel-subtle transition-colors"
-        >
-          <Search className="w-4.5 h-4.5 text-swel-body" />
-        </button>
       </div>
     </nav>
   )
