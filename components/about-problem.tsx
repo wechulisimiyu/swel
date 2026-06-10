@@ -1,3 +1,5 @@
+import { Globe, Users } from 'lucide-react'
+
 export default function AboutProblem() {
   return (
     <section className="mt-24 bg-swel-bg-grey py-24">
@@ -15,7 +17,7 @@ export default function AboutProblem() {
           <div className="flex gap-6 w-2/3">
             {/* Card 1 */}
             <div className="flex-1 bg-white border border-swel-border shadow-[0_1px_2px_rgba(0,0,0,0.05)] rounded-lg p-8 flex flex-col gap-3">
-              <div className="w-10 h-10 bg-swel-navy-mid rounded-sm" />
+              <Globe className="w-10 h-10 text-swel-navy-mid" />
               <h3 className="text-h3 leading-8 text-swel-heading pt-1">
                 Global Surgical Inequity
               </h3>
@@ -27,7 +29,7 @@ export default function AboutProblem() {
 
             {/* Card 2 */}
             <div className="flex-1 bg-white border border-swel-border shadow-[0_1px_2px_rgba(0,0,0,0.05)] rounded-lg p-8 flex flex-col gap-3">
-              <div className="w-10 h-10 bg-swel-navy-mid rounded-sm" />
+              <Users className="w-10 h-10 text-swel-navy-mid" />
               <h3 className="text-h3 leading-8 text-swel-heading pt-1">
                 Leadership Disparities
               </h3>

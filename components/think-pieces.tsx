@@ -34,7 +34,7 @@ export default function ThinkPieces() {
           {articles.map((article) => (
             <article
               key={article.title}
-              className="flex flex-col gap-4 p-6 bg-white border border-swel-subtle rounded-xl shadow-[0_1px_2px_rgba(0,0,0,0.05)]"
+              className="flex flex-col gap-4 p-6 bg-white border border-swel-subtle rounded-xl shadow-[0_1px_2px_rgba(0,0,0,0.05)] hover:shadow-md transition-shadow"
             >
               <time className="text-label text-swel-faint">
                 {article.date}

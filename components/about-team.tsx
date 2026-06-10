@@ -41,7 +41,7 @@ export default function AboutTeam() {
             </div>
 
             <Link
-              href="#"
+              href="/team"
               className="flex items-center gap-2 text-body font-medium leading-6 text-swel-navy-mid hover:opacity-80 transition-opacity"
             >
               <span>View all team</span>

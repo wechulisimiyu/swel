@@ -25,7 +25,7 @@ export default function CTABlock() {
 
           <Link
             href="/get-involved"
-            className="relative flex items-center gap-3 px-10 py-5 rounded-xl bg-white shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_8px_10px_-6px_rgba(0,0,0,0.1)] hover:bg-swel-bg transition-colors"
+            className="relative flex items-center gap-3 px-10 py-5 rounded-xl bg-white shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_8px_10px_-6px_rgba(0,0,0,0.1)] hover:bg-swel-bg transition-all hover:scale-105 active:scale-95"
           >
             <span className="text-body font-bold text-swel-navy">
               Become a Research Partner
