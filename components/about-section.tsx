@@ -11,17 +11,17 @@ export default function AboutSection() {
         <div className="flex gap-12 items-start">
           {/* Left column — text content */}
           <div className="flex flex-col gap-8 flex-1">
-            <h2 className="text-[32px] font-bold leading-10.5 tracking-[-0.32px] text-swel-navy">
+            <h2 className="text-h2 text-swel-navy">
               About the Lab
             </h2>
 
             <div className="flex flex-col gap-6">
-              <p className="text-[16px] leading-6.5 text-swel-body">
+              <p className="text-body text-swel-body">
                 The Surgical Work and Equity Lab (SWEL) operates at the critical intersection of
                 clinical excellence and social justice. Our mission is to dismantle structural
                 barriers that prevent equitable participation in surgical careers.
               </p>
-              <p className="text-[16px] leading-6.5 text-swel-body">
+              <p className="text-body text-swel-body">
                 Through rigorous, peer-reviewed methodology and collaborative global partnerships, we
                 produce actionable data that informs policy and transforms institutional cultures.
               </p>
@@ -34,10 +34,10 @@ export default function AboutSection() {
                   key={stat.label}
                   className="flex-1 flex flex-col items-center justify-center gap-1 p-4 border border-swel-border rounded-xl h-20"
                 >
-                  <span className="text-[24px] font-semibold leading-8.5 text-swel-navy">
+                  <span className="text-h3 text-swel-navy">
                     {stat.value}
                   </span>
-                  <span className="text-[12px] font-semibold tracking-[0.6px] text-swel-muted">
+                  <span className="text-label text-swel-muted">
                     {stat.label}
                   </span>
                 </div>

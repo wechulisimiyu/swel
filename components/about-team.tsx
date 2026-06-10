@@ -5,22 +5,22 @@ const team = [
   {
     name: 'Dr. Sarah Chen',
     role: 'DIRECTOR & FOUNDER',
-    color: 'bg-[#d8e3fb]',
+    color: 'bg-swel-accent',
   },
   {
     name: 'James Okoro, PhD',
     role: 'LEAD EPIDEMIOLOGIST',
-    color: 'bg-[#dae2fd]',
+    color: 'bg-swel-accent2',
   },
   {
     name: 'Dr. Elena Rodriguez',
     role: 'SENIOR FELLOW',
-    color: 'bg-[#d5e3fc]',
+    color: 'bg-swel-accent3',
   },
   {
     name: 'Mark Thompson',
     role: 'POLICY COORDINATOR',
-    color: 'bg-[#c6c6cd]',
+    color: 'bg-swel-border',
   },
 ]
 
@@ -32,17 +32,17 @@ export default function AboutTeam() {
           {/* Header */}
           <div className="flex items-end justify-between">
             <div className="flex flex-col gap-[0.01px]">
-              <h2 className="text-[32px] font-bold leading-10.5 tracking-[-0.32px] text-swel-navy-mid">
+              <h2 className="text-h2 text-swel-navy-mid">
                 Our Team
               </h2>
-              <p className="text-[18px] leading-8 text-swel-body">
+              <p className="text-body-lg text-swel-body">
                 Meet the people behind the research.
               </p>
             </div>
 
             <Link
               href="#"
-              className="flex items-center gap-2 text-[16px] font-medium leading-6 text-swel-navy-mid hover:opacity-80 transition-opacity"
+              className="flex items-center gap-2 text-body font-medium leading-6 text-swel-navy-mid hover:opacity-80 transition-opacity"
             >
               <span>View all team</span>
               <ArrowRight className="w-4 h-4" />
@@ -60,10 +60,10 @@ export default function AboutTeam() {
 
                 {/* Name */}
                 <div className="flex flex-col gap-0">
-                  <h4 className="text-[18px] font-bold leading-8 text-swel-navy-mid">
+                  <h4 className="text-body-lg font-bold leading-8 text-swel-navy-mid">
                     {member.name}
                   </h4>
-                  <span className="text-[12px] font-semibold leading-3 tracking-[0.6px] uppercase text-swel-body">
+                  <span className="text-label uppercase text-swel-body">
                     {member.role}
                   </span>
                 </div>

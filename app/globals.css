@@ -1,25 +1,78 @@
 @import 'tailwindcss';
+@import '@radix-ui/colors/sand.css';
+@import '@radix-ui/colors/indigo.css';
 
 @theme {
+  /* Brand navies — custom hex (Radix indigo is too saturated) */
   --color-swel-navy: #111c2d;
   --color-swel-navy-mid: #2d325a;
-  --color-swel-bg: #fbf9f8;
-  --color-swel-bg-light: #f7f9fb;
-  --color-swel-bg-grey: #f2f4f6;
-  --color-swel-bg-card: #eceef0;
+
+  /* Backgrounds → Radix sand (warm whites, close match) */
+  --color-swel-bg: var(--sand-1);
+  --color-swel-bg-light: var(--sand-2);
+  --color-swel-bg-grey: var(--sand-3);
+  --color-swel-bg-card: var(--sand-4);
+
+  /* Text — custom hex (blue-tinted cool grays; sand text is warm) */
   --color-swel-body: #45464d;
   --color-swel-muted: #64748b;
   --color-swel-faint: #94a3b8;
-  --color-swel-accent: #d8e3fb;
-  --color-swel-accent2: #dae2fd;
-  --color-swel-accent3: #d5e3fc;
-  --color-swel-border: #c6c6cd;
-  --color-swel-divider: #e2e8f0;
-  --color-swel-subtle: #f1f5f9;
-  --font-sans: var(--font-inter);
-}
 
-body {
-  background-color: #fbf9f8;
-  color: #45464d;
+  /* Accents → Radix indigo (good match for light indigos) */
+  --color-swel-accent: var(--indigo-3);
+  --color-swel-accent2: var(--indigo-4);
+  --color-swel-accent3: var(--indigo-5);
+
+  /* Borders / Dividers → Radix sand */
+  --color-swel-border: var(--sand-6);
+  --color-swel-divider: var(--sand-5);
+  --color-swel-subtle: var(--sand-3);
+
+  /* New tokens for missing raw hexes */
+  --color-swel-label: #3c475a;
+  --color-swel-heading: #191c1e;
+  --color-swel-tag: #57657a;
+  --color-swel-author: #334155;
+  --color-swel-cta-light: var(--indigo-4);
+  --color-swel-accent-line: var(--indigo-6);
+
+  /* Typography scale */
+  --font-size-h1: 3rem;
+  --font-size-h1--line-height: 3.625rem;
+  --font-size-h1--letter-spacing: -0.02em;
+  --font-size-h1--font-weight: 700;
+
+  --font-size-h2: 2rem;
+  --font-size-h2--line-height: 2.625rem;
+  --font-size-h2--letter-spacing: -0.01em;
+  --font-size-h2--font-weight: 700;
+
+  --font-size-h3: 1.5rem;
+  --font-size-h3--line-height: 2.125rem;
+  --font-size-h3--font-weight: 600;
+
+  --font-size-h4: 1.25rem;
+  --font-size-h4--line-height: 1.5rem;
+  --font-size-h4--font-weight: 400;
+
+  --font-size-body-lg: 1.125rem;
+  --font-size-body-lg--line-height: 2rem;
+
+  --font-size-body: 1rem;
+  --font-size-body--line-height: 1.625rem;
+
+  --font-size-body-sm: 0.875rem;
+  --font-size-body-sm--line-height: 1.25rem;
+
+  --font-size-label: 0.75rem;
+  --font-size-label--line-height: 0.75rem;
+  --font-size-label--letter-spacing: 0.05em;
+  --font-size-label--font-weight: 600;
+
+  --font-size-caption: 0.625rem;
+  --font-size-caption--line-height: 1rem;
+  --font-size-caption--font-weight: 700;
+
+  /* Font */
+  --font-sans: var(--font-inter);
 }
