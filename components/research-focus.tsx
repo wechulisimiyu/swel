@@ -27,10 +27,10 @@ export default function ResearchFocus() {
       <div className="mx-auto max-w-300 px-8 flex flex-col items-center gap-16">
         {/* Header */}
         <div className="flex flex-col items-center gap-4 max-w-2xl text-center">
-          <h2 className="text-[32px] font-bold leading-10.5 tracking-[-0.32px] text-swel-navy">
+          <h2 className="text-h2 font-bold leading-10.5 tracking-[-0.32px] text-swel-navy">
             Our Focus
           </h2>
-          <p className="text-[16px] leading-6.5 text-swel-body">
+          <p className="text-body leading-6.5 text-swel-body">
             Our interdisciplinary research spans three core areas, each designed to produce evidence
             that drives systemic change in surgical institutions worldwide.
           </p>
@@ -46,10 +46,10 @@ export default function ResearchFocus() {
               <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-swel-accent2">
                 {area.icon}
               </div>
-              <h3 className="text-[24px] font-semibold leading-8.5 text-[#1B1C1C] pt-2">
+              <h3 className="text-h3 font-semibold leading-8.5 text-swel-heading pt-2">
                 {area.title}
               </h3>
-              <p className="text-[16px] leading-6.5 text-swel-body">{area.description}</p>
+              <p className="text-body leading-6.5 text-swel-body">{area.description}</p>
             </div>
           ))}
         </div>

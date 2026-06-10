@@ -23,7 +23,7 @@ export default function Footer() {
             SWEL
           </Link>
 
-          <p className="text-[12px] leading-5 text-swel-muted">
+          <p className="text-label leading-5 text-swel-muted">
             © 2025 Surgical Work and Equity Lab. Focused on surgical precision and social equity. A
             multidisciplinary initiative dedicated to clinical excellence and global health justice.
           </p>
@@ -32,10 +32,10 @@ export default function Footer() {
           <div className="flex items-center gap-4 pt-2">
             {/* Twitter/X */}
             <Link href="#" aria-label="Twitter" className="hover:opacity-70 transition-opacity">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="text-swel-faint">
                 <path
                   d="M17.5 2.5L11.25 9.58M2.5 2.5L8.75 9.58M2.5 17.5L8.75 10.42M17.5 17.5L11.25 10.42"
-                  stroke="#94A3B8"
+                  stroke="currentColor"
                   strokeWidth="1.5"
                   strokeLinecap="round"
                 />
@@ -43,31 +43,31 @@ export default function Footer() {
             </Link>
             {/* LinkedIn */}
             <Link href="#" aria-label="LinkedIn" className="hover:opacity-70 transition-opacity">
-              <svg width="20" height="16" viewBox="0 0 20 16" fill="none" aria-hidden="true">
-                <rect width="4" height="10" rx="1" fill="#94A3B8" transform="translate(0 6)" />
-                <circle cx="2" cy="2" r="2" fill="#94A3B8" />
+              <svg width="20" height="16" viewBox="0 0 20 16" fill="none" aria-hidden="true" className="text-swel-faint">
+                <rect width="4" height="10" rx="1" fill="currentColor" transform="translate(0 6)" />
+                <circle cx="2" cy="2" r="2" fill="currentColor" />
                 <path
                   d="M7 16V9a4 4 0 018 0v7"
-                  stroke="#94A3B8"
+                  stroke="currentColor"
                   strokeWidth="1.5"
                   strokeLinecap="round"
                 />
-                <rect x="7" y="6" width="4" height="10" rx="1" fill="#94A3B8" />
+                <rect x="7" y="6" width="4" height="10" rx="1" fill="currentColor" />
               </svg>
             </Link>
             {/* Email */}
             <Link href="#" aria-label="Email" className="hover:opacity-70 transition-opacity">
-              <svg width="18" height="20" viewBox="0 0 18 14" fill="none" aria-hidden="true">
+              <svg width="18" height="20" viewBox="0 0 18 14" fill="none" aria-hidden="true" className="text-swel-faint">
                 <rect
                   x="1"
                   y="1"
                   width="16"
                   height="12"
                   rx="2"
-                  stroke="#94A3B8"
+                  stroke="currentColor"
                   strokeWidth="1.5"
                 />
-                <path d="M1 4l8 5 8-5" stroke="#94A3B8" strokeWidth="1.5" strokeLinecap="round" />
+                <path d="M1 4l8 5 8-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
               </svg>
             </Link>
           </div>
@@ -77,7 +77,7 @@ export default function Footer() {
         <div className="flex gap-16">
           {/* About column */}
           <div className="flex flex-col gap-4">
-            <h5 className="text-[14px] font-bold leading-5 tracking-[0.7px] uppercase text-swel-navy-mid">
+            <h5 className="text-body-sm font-bold leading-5 tracking-[0.7px] uppercase text-swel-navy-mid">
               About
             </h5>
             <ul className="flex flex-col gap-2">
@@ -85,7 +85,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-[12px] leading-4 text-swel-muted hover:text-swel-navy transition-colors"
+                    className="text-label leading-4 text-swel-muted hover:text-swel-navy transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -96,7 +96,7 @@ export default function Footer() {
 
           {/* Legal column */}
           <div className="flex flex-col gap-4">
-            <h5 className="text-[14px] font-bold leading-5 tracking-[0.7px] uppercase text-swel-navy-mid">
+            <h5 className="text-body-sm font-bold leading-5 tracking-[0.7px] uppercase text-swel-navy-mid">
               Legal
             </h5>
             <ul className="flex flex-col gap-2">
@@ -104,7 +104,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-[12px] leading-4 text-swel-muted hover:text-swel-navy transition-colors"
+                    className="text-label leading-4 text-swel-muted hover:text-swel-navy transition-colors"
                   >
                     {link.label}
                   </Link>

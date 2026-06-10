@@ -41,13 +41,13 @@ export default function AboutApproach() {
                 key={item.number}
                 className="flex flex-col gap-3 pl-8 border-l-2 border-swel-border pt-4 pb-4"
               >
-                <span className="text-[12px] font-semibold leading-3 tracking-[0.6px] text-swel-body">
+                <span className="text-label font-semibold leading-3 tracking-[0.6px] text-swel-body">
                   {item.number}
                 </span>
-                <h3 className="text-[24px] font-semibold leading-8.5 text-swel-navy-mid pt-1">
+                <h3 className="text-h3 font-semibold leading-8.5 text-swel-navy-mid pt-1">
                   {item.title}
                 </h3>
-                <p className="text-[16px] leading-6 text-swel-body">{item.description}</p>
+                <p className="text-body leading-6 text-swel-body">{item.description}</p>
               </div>
             ))}
           </div>
