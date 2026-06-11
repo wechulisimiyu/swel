@@ -10,7 +10,7 @@ export default function AboutHero() {
             </span>
 
             <h1 className="text-h1 text-swel-navy-mid">
-              Advancing and Designing
+              Advancing Equity in Surgical Care.
             </h1>
 
             <p className="text-body-lg text-swel-body max-w-xl">
