@@ -82,12 +82,14 @@ export default function BlogPage() {
           <div className="relative z-10 mx-auto max-w-300 w-full px-8 pb-16">
             <div className="max-w-3xl">
               <div className="flex items-center gap-4 mb-6">
-                <span className="px-3 py-1 rounded-sm bg-swel-accent text-swel-navy text-caption font-bold uppercase tracking-widest">
+                <span className="px-3 py-1 rounded-full bg-swel-accent text-swel-navy text-caption font-bold uppercase tracking-widest">
                   Featured Article
                 </span>
                 <span className="text-white/70 text-caption font-bold uppercase tracking-widest">{featured.category}</span>
               </div>
-              <h1 className="text-h1 text-white mb-6 leading-tight">{featured.title}</h1>
+              <Link href={featured.href} className="hover:underline">
+                <h1 className="text-h1 text-white mb-6 leading-tight">{featured.title}</h1>
+              </Link>
               <p className="text-body-lg text-white/80 mb-10 max-w-2xl">{featured.description}</p>
               <div className="flex items-center gap-12 text-white/70">
                 <div className="flex items-center gap-3">
