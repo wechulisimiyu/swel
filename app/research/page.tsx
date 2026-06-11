@@ -98,7 +98,7 @@ export default function ResearchPage() {
             </button>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
             {projects.map((project) => (
               <article
                 key={project.title}
@@ -129,6 +129,12 @@ export default function ResearchPage() {
                 </div>
               </article>
             ))}
+          </div>
+
+          <div className="flex justify-center">
+            <button className="px-10 py-3 border border-swel-navy text-swel-navy text-label hover:bg-swel-navy hover:text-white transition-all duration-300 active:scale-95">
+              LOAD MORE RESEARCH
+            </button>
           </div>
         </div>
       </main>

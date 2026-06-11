@@ -22,7 +22,7 @@ export default function Hero() {
 
             {/* Heading */}
             <h1 className="text-h1 text-swel-navy max-w-3xl">
-              Advancing and Designing
+              Advancing Gender Equity in Global Surgery
             </h1>
 
             {/* Subtitle */}

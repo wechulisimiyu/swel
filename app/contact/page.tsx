@@ -129,6 +129,18 @@ export default function ContactPage() {
               </div>
             </div>
           </div>
+
+          {/* Visual break */}
+          <section className="mt-32 rounded-2xl overflow-hidden relative h-100 flex items-center px-12">
+            <div className="absolute inset-0 bg-linear-to-br from-swel-bg-card via-swel-accent2 to-swel-bg-card" />
+            <div className="absolute inset-0 bg-swel-navy/60 backdrop-blur-[2px]" />
+            <div className="relative z-10 max-w-2xl">
+              <h2 className="text-h1 text-white mb-6">Our Impact Across 15+ Countries</h2>
+              <p className="text-body-lg text-white/90">
+                Join the movement toward universally accessible surgical care. We believe equity is the ultimate measure of surgical success.
+              </p>
+            </div>
+          </section>
         </div>
       </main>
       <Footer />

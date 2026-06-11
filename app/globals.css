@@ -1,40 +1,38 @@
 @import 'tailwindcss';
-@import '@radix-ui/colors/sand.css';
-@import '@radix-ui/colors/indigo.css';
 
 @theme {
-  /* Brand navies — custom hex (Radix indigo is too saturated) */
+  /* Brand navies — custom hex, matches stitch tertiary-container/on-tertiary-fixed */
   --color-swel-navy: #111c2d;
   --color-swel-navy-mid: #2d325a;
 
-  /* Backgrounds → Radix sand (warm whites, close match) */
-  --color-swel-bg: var(--sand-1);
-  --color-swel-bg-light: var(--sand-2);
-  --color-swel-bg-grey: var(--sand-3);
-  --color-swel-bg-card: var(--sand-4);
+  /* Backgrounds — stitch surface tones (background/surface/surface-container-*) */
+  --color-swel-bg: #fbf9f8;
+  --color-swel-bg-light: #f7f9fb;
+  --color-swel-bg-grey: #f2f4f6;
+  --color-swel-bg-card: #eceef0;
 
-  /* Text — custom hex (blue-tinted cool grays; sand text is warm) */
+  /* Text — stitch on-surface-variant + slate grays */
   --color-swel-body: #45464d;
   --color-swel-muted: #64748b;
   --color-swel-faint: #94a3b8;
 
-  /* Accents → Radix indigo (good match for light indigos) */
-  --color-swel-accent: var(--indigo-3);
-  --color-swel-accent2: var(--indigo-4);
-  --color-swel-accent3: var(--indigo-5);
+  /* Accents — stitch tertiary-fixed / primary-fixed / secondary-container */
+  --color-swel-accent: #d8e3fb;
+  --color-swel-accent2: #dae2fd;
+  --color-swel-accent3: #d5e3fc;
 
-  /* Borders / Dividers → Radix sand */
-  --color-swel-border: var(--sand-6);
-  --color-swel-divider: var(--sand-5);
-  --color-swel-subtle: var(--sand-3);
+  /* Borders / Dividers — stitch outline-variant / surface-variant / surface-container-low */
+  --color-swel-border: #c6c6cd;
+  --color-swel-divider: #e0e3e5;
+  --color-swel-subtle: #f2f4f6;
 
   /* New tokens for missing raw hexes */
   --color-swel-label: #3c475a;
   --color-swel-heading: #191c1e;
   --color-swel-tag: #57657a;
   --color-swel-author: #334155;
-  --color-swel-cta-light: var(--indigo-4);
-  --color-swel-accent-line: var(--indigo-6);
+  --color-swel-cta-light: #dae2fd;
+  --color-swel-accent-line: #bcc7de;
 
   /* Typography scale */
   --font-size-h1: 3rem;

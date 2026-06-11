@@ -6,7 +6,16 @@ This file logs unresolved design decisions with context, recommended paths, and 
 
 ## D1: Canonical color palette — which design spec wins?
 
-**Status:** Blocked — needs UX research (Issue #2)
+**Status:** Resolved (interim) — stitch extraction is source of truth pending Figma
+
+**Resolution:** The stakeholder Figma (Figma Make, "Incorporate new color scheme") could not
+be extracted programmatically (auth-gated SPA, no REST/MCP path for Make files). Per
+direction, the `docs/pages/*/code.html` stitch extractions are the interim ground truth —
+all 7 stitch pages share one consistent MD3-style token set. `app/globals.css` `swel-*`
+tokens have been remapped to the exact stitch hex values (see D3/D4). `swel-navy` (#111C2D)
+and `swel-heading`/`swel-body`/`swel-tag`/`swel-label` already matched stitch exactly and
+are unchanged. When the Figma export becomes available, only these token values need to
+change — components consume the `swel-*` variables, not raw hex.
 
 **Context:** The extracted designs in `docs/pages/` and `docs/specs/` contain two
 distinct color systems:
@@ -49,7 +58,15 @@ A/B test variants, keeping both is dead weight.
 
 ## D3: Radix UI Colors — which neutral scale?
 
-**Status:** Blocked by D1
+**Status:** Resolved (interim) — dropped Radix scales, use exact stitch hex values
+
+**Resolution:** Neither `sand` nor `slate` matches the stitch extraction exactly (stitch's
+`background`/`surface` `#f7f9fb`, `surface-container-low` `#f2f4f6`,
+`surface-container` `#eceef0`, `outline-variant` `#c6c6cd` are all custom blue-grays, not
+on the Radix sand or slate ramps). Per "do not miss an inch", `swel-bg`, `swel-bg-light`,
+`swel-bg-grey`, `swel-bg-card`, `swel-border`, `swel-divider`, and `swel-subtle` now hold
+these exact stitch hex values directly. The `@radix-ui/colors` CSS imports were removed
+from `app/globals.css` (no longer referenced).
 
 **Context:** Radix offers 6 neutral scales with different undertones:
 
@@ -72,7 +89,14 @@ accents.
 
 ## D4: Radix UI Colors — which primary/ accent scales?
 
-**Status:** Blocked by D1
+**Status:** Resolved (interim) — dropped Radix indigo, use exact stitch MD3 accent tones
+
+**Resolution:** `swel-accent` (`#d8e3fb`, stitch `tertiary-fixed`), `swel-accent2`
+(`#dae2fd`, stitch `primary-fixed`), `swel-accent3` (`#d5e3fc`, stitch
+`secondary-container`), `swel-accent-line` (`#bcc7de`, stitch `tertiary-fixed-dim`), and
+`swel-cta-light` (`#dae2fd`, stitch `primary-fixed`) now hold the exact stitch hex values
+instead of Radix `indigo` approximations. `swel-navy` (`#111c2d`) remains the brand anchor
+— it already matches stitch's `tertiary-container`/`on-tertiary-fixed` exactly.
 
 **Context:** Radix provides 20+ color scales (blue, indigo, violet, ruby, etc.).
 SWEL's brand anchor `#2D325A` falls roughly in the `indigo` or `violet` range.
@@ -124,7 +148,12 @@ photography/video shoot or can use stock/illustration.
 
 ## D7: Shape language — sharp vs rounded?
 
-**Status:** Pending
+**Status:** Resolved — standardized on rounded (8-12px+), per stitch
+
+**Resolution:** Codebase already predominantly used `rounded-lg`/`rounded-xl`/`rounded-2xl`/
+`rounded-full`, matching stitch. Cleaned up the two outliers: `rounded-sm` (sharp 2px, in
+`about-mission-vision.tsx`) → `rounded-lg`, and `rounded-[2rem]` → `rounded-[32px]` (in
+`learning/page.tsx`) for consistent notation with stitch's `rounded-[32px]` CTA blocks.
 
 **Context:** The two design specs are in direct conflict and both are used in the codebase:
 

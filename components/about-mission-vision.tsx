@@ -17,7 +17,7 @@ export default function AboutMissionVision() {
 
             {/* Decorative icon placeholder */}
             <div className="absolute right-0 top-0 w-34.75 h-41 p-8 opacity-10">
-              <div className="w-18.75 h-25 bg-swel-heading rounded-sm" />
+              <div className="w-18.75 h-25 bg-swel-heading rounded-lg" />
             </div>
           </div>
 
