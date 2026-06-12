@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Hexagon, ArrowRight } from 'lucide-react'
+import { BookOpen, ArrowRight } from 'lucide-react'
 
 export default function CTABlock() {
   return (
@@ -9,9 +9,8 @@ export default function CTABlock() {
         <div className="absolute inset-0 bg-swel-navy-mid opacity-10" />
 
         <div className="relative flex flex-col items-center text-center px-20 py-20 gap-6 max-w-4xl mx-auto">
-          {/* Icon placeholder */}
           <div className="flex items-center justify-center w-9 h-11">
-            <Hexagon className="w-9 h-11 text-white" fill="white" />
+            <BookOpen className="w-9 h-11 text-white" />
           </div>
 
           <h2 className="text-h1 text-white pt-2">

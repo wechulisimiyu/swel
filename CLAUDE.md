@@ -63,6 +63,22 @@ When a new color appears in a spec, add it to `@theme {}` before using it — ne
 
 All raster images must be **WebP** under `public/images/`. Use `next/image` everywhere — no `<img>` tags. Hero/above-fold images get `priority`. See `/add-assets` skill for the full conversion workflow.
 
+## Design parity workflow
+
+When asked to bring a page/component to parity with the design:
+
+- `docs/pages/<route>/code.html` are Stitch design exports — the source of
+  truth for markup, tokens, and interaction classes for that route.
+  `docs/screenshots/*.jpg` are rendered references for visual comparison.
+- `docs/IMPLEMENTATION.md` and `docs/DECISIONS.md` track parity work item
+  statuses and open design decisions. Check them before starting a parity
+  pass, and update statuses (`done`/`pending`/`superseded`/etc.) when you
+  resolve an item.
+- Stitch `<img>` elements pointing at `lh3.googleusercontent.com/aida-public/...`
+  are ephemeral AI-generated placeholders, not real brand assets — do not
+  fetch them. Recreate the visual as an inline SVG/icon where feasible, or
+  treat it as an "image not available" gap per the project's image policy.
+
 ## Project skills
 
 Custom slash commands in `.claude/commands/`:

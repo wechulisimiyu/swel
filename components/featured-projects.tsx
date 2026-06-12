@@ -80,7 +80,7 @@ export default function FeaturedProjects() {
 
                 <Link
                   href={project.href}
-                  className="inline-flex items-center gap-2 text-body font-semibold text-swel-navy hover:opacity-70 transition-opacity"
+                  className="inline-flex items-center gap-2 text-body font-semibold text-swel-navy hover:gap-4 transition-all active:scale-95"
                 >
                   Read More
                   <ArrowUpRight className="w-4 h-4" />
