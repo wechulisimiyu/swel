@@ -55,8 +55,8 @@ export default function Nav() {
                 href={link.href}
                 className={
                   isActive
-                    ? 'text-xs font-semibold tracking-[0.6px] text-swel-navy-mid border-b-2 border-swel-navy-mid pb-1'
-                    : 'text-xs font-semibold tracking-[0.6px] text-swel-muted hover:text-swel-navy transition-colors'
+                    ? 'text-xs font-semibold tracking-[0.6px] text-swel-navy-mid border-b-2 border-swel-navy-mid pb-1 inline-block hover:scale-105 active:scale-95 transition-transform'
+                    : 'text-xs font-semibold tracking-[0.6px] text-swel-muted hover:text-swel-navy transition-colors inline-block hover:scale-105 active:scale-95 transition-transform'
                 }
               >
                 {link.label}

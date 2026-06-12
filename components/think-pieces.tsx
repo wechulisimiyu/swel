@@ -34,13 +34,13 @@ export default function ThinkPieces() {
           {articles.map((article) => (
             <article
               key={article.title}
-              className="flex flex-col gap-4 p-6 bg-white border border-swel-subtle rounded-xl shadow-[0_1px_2px_rgba(0,0,0,0.05)] hover:shadow-md transition-shadow"
+              className="flex flex-col gap-4 p-6 bg-white border border-swel-subtle rounded-xl shadow-[0_1px_2px_rgba(0,0,0,0.05)] hover:shadow-md transition-all"
             >
               <time className="text-label text-swel-faint">
                 {article.date}
               </time>
 
-              <h3 className="text-h4 text-swel-navy">
+              <h3 className="text-h4 text-swel-navy hover:text-swel-navy-mid transition-colors cursor-pointer">
                 {article.title}
               </h3>
 

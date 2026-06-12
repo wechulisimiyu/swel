@@ -79,10 +79,10 @@ interactions, and have no dead links or placeholder quality issues.
 |---|-----------|------|------------------|---------|--------|
 | 2.1 | Hero | `hero.tsx` | `home/code.html:41-57` | Fix navy/90 opacity hacks, add scale interactions on buttons | `pending` |
 | 2.2 | AboutSection | `about-section.tsx` | `home/code.html:58-88` | Fix tokens, replace image placeholder with `next/image` | `pending` |
-| 2.3 | ResearchFocus | `research-focus.tsx` | `home/code.html:90-118` | Add group-hover on cards, swap icon bg on hover | `pending` |
-| 2.4 | FeaturedProjects | `featured-projects.tsx` | `home/code.html:121-165` | Add `group-hover:scale-105` on images, fix tag tokens | `pending` |
-| 2.5 | ThinkPieces | `think-pieces.tsx` | `home/code.html:166-197` | Add hover states, replace author avatars with `next/image` | `pending` |
-| 2.6 | CTABlock | `cta-block.tsx` | `home/code.html:200-214` | Fix `[#2D325A]` → token, add scale on button | `pending` |
+| 2.3 | ResearchFocus | `research-focus.tsx` | `home/code.html:90-118` | Add group-hover on cards, swap icon bg on hover | `done` |
+| 2.4 | FeaturedProjects | `featured-projects.tsx` | `home/code.html:121-165` | Add `group-hover:scale-105` on images, fix tag tokens | `done` |
+| 2.5 | ThinkPieces | `think-pieces.tsx` | `home/code.html:166-197` | Add hover states, replace author avatars with `next/image` | `partial` — title hover (`hover:text-swel-navy-mid transition-colors cursor-pointer`) added; author avatar `next/image` replacement still pending (no image asset) |
+| 2.6 | CTABlock | `cta-block.tsx` | `home/code.html:200-214` | Fix `[#2D325A]` → token, add scale on button | `done` — token already `swel-navy-mid`, scale already present; icon swapped `Hexagon` → `BookOpen` (see Image Placeholder Inventory #9). Content intentionally kept as "Join Us" / `/get-involved` rather than stitch's "Learning Platform" promo, since `/learning` already has its own dedicated hero/CTA (decided 2026-06-12) |
 | 2.7 | AboutHero | `about-hero.tsx` | `about_us/code.html:50-66` | Fix tokens, add label-caps style, replace image placeholder | `pending` |
 | 2.8 | AboutProblem | `about-problem.tsx` | `about_us/code.html:67-88` | Add stitch icons (`public`, `diversity_3`), fix tokens | `pending` |
 | 2.9 | AboutMissionVision | `about-mission-vision.tsx` | `about_us/code.html:90-104` | Align bento layout with stitch, replace icon placeholder | `pending` |
@@ -91,14 +91,14 @@ interactions, and have no dead links or placeholder quality issues.
 
 ### Interactions to Extract from Stitch
 
-| Component | Stitch Class | Implementation |
-|-----------|-------------|----------------|
-| Focus cards | `hover:shadow-md transition-all group` | Wrap card in `group`, add transition |
-| Focus card icon | `group-hover:bg-primary group-hover:text-on-primary transition-all` | Icon container swaps bg/text on group hover |
-| Project image | `group-hover:scale-105 transition-transform duration-500` | Wrap `next/image` in `overflow-hidden`, add scale |
-| CTA buttons | `hover:scale-105 active:scale-95 transition-transform` | Add to all CTA buttons |
-| Footer links | `hover:underline` | Add underline decoration |
-| Nav links | `hover:scale-105 inline-block transition-transform` | Extend existing nav hover states |
+| Component | Stitch Class | Implementation | Status |
+|-----------|-------------|----------------|--------|
+| Focus cards | `hover:shadow-md transition-all group` | Wrap card in `group`, add transition | `done` |
+| Focus card icon | `group-hover:bg-primary group-hover:text-on-primary transition-all` | Icon container swaps bg/text on group hover | `done` |
+| Project image | `group-hover:scale-105 transition-transform duration-500` | Wrap `next/image` in `overflow-hidden`, add scale | `done` (scale done; still a gradient placeholder, not `next/image` — see Image Placeholder Inventory #6) |
+| CTA buttons | `hover:scale-105 active:scale-95 transition-transform` | Add to all CTA buttons | `done` |
+| Footer links | `hover:underline` | Add underline decoration | `done` — `hover:underline decoration-swel-navy-mid/30` |
+| Nav links | `hover:scale-105 inline-block transition-transform` | Extend existing nav hover states | `done` |
 
 ---
 
@@ -156,7 +156,7 @@ export default function Page() {
 | 4.2 | Wire `/privacy`, `/terms`, `/access`, `/report` to `ComingSoon` | `app/privacy/page.tsx` etc. — 4 new page files | `pending` |
 | 4.3 | Fix social links in footer (or remove `href="#"`) | `footer.tsx` | `pending` |
 | 4.4 | Fix hero CTA "VIEW PUBLICATIONS" → link to `/publications` | `hero.tsx:46` | `pending` |
-| 4.5 | Hide search button until search feature is scoped | `nav.tsx:48-53` | `pending` |
+| 4.5 | Hide search button until search feature is scoped | `nav.tsx:48-53` | `superseded` — search button restored as a styled, non-functional icon for visual parity with stitch nav, per stakeholder direction (2026-06-12, see DECISIONS.md D8) |
 | 4.6 | Fix "View all team" link → `/team` | `about-team.tsx:44` | `pending` |
 | 4.7 | Add per-page `<title>` and meta description to all routes | `app/*/page.tsx` | `pending` |
 
@@ -191,7 +191,7 @@ current design-as-is pass.
 | 6 | FeaturedProjects | `featured-projects.tsx` | 57 | Project image ×2 | `pending` |
 | 7 | ThinkPieces | `think-pieces.tsx` | 53 | Author avatar ×3 | `pending` |
 | 8 | AboutTeam | `about-team.tsx` | 57 | Team member photo ×4 | `pending` |
-| 9 | CTABlock | `cta-block.tsx` | 13 | Hexagon icon | `pending` |
+| 9 | CTABlock | `cta-block.tsx` | 13 | Hexagon icon | `done` — swapped to `BookOpen` (lucide), matching stitch's `local_library` icon |
 
 **Total: 17 placeholder elements** (vs 7 originally tracked in Issue [#6](https://github.com/wechulisimiyu/swel/issues/6). Additional avatars tracked in [#12](https://github.com/wechulisimiyu/swel/issues/12)).
 

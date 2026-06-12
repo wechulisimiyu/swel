@@ -176,17 +176,17 @@ as it matches the extracted designs most closely.
 
 ## D8: Search functionality — hide or implement?
 
-**Status:** Pending
+**Status:** Resolved (2026-06-12)
 
-**Context:** `nav.tsx:48-53` renders a Search icon button with no `onClick` handler,
+**Context:** `nav.tsx` renders a Search icon button with no `onClick` handler,
 no search modal, no search route. It is a dead UI element.
 
-**Recommendation:** Comment out or hide the search button until a search feature
-is scoped. A non-functional element erodes trust more than its absence. If the
-stakeholder requires search, scope it as a separate feature with a dedicated
-search page or modal.
+**Resolution:** Per stakeholder direction, restored as a styled, non-functional
+icon button (visual parity with the stitch nav, which has the same
+non-functional placeholder). If search becomes a real requirement, scope it as
+a separate feature with a dedicated search page or modal — tracked under #9.
 
-**Blocks:** Phase 4 (polish), #9 (dedicated search issue)
+**Blocks:** #9 (dedicated search issue, if/when scoped)
 
 ---
 
